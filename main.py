@@ -5,7 +5,7 @@ import musicLibrary
 import requests
 import openai
 
-newsapi = "f1cc2066f5e8434f9d6ab2d7f359f176"  # API key
+newsapi = ""  # API key
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
 
@@ -16,7 +16,7 @@ def speak(text):
 
 def aiProcess(command):
     client = OpenAI(
-    api_key="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",
+    api_key="",
 )
 completion = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",  
